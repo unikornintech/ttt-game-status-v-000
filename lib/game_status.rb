@@ -34,6 +34,6 @@ def draw?(board)
   board.none? { |position | position == " " } && !won?(board)
 end
 
-def over?
+def over?(board)
   board.none? { | position | position == " " }
 end
