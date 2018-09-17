@@ -33,3 +33,7 @@ end
 def draw?(board)
   board.none? { |position | position == " " } && !won?(board)
 end
+
+def over?
+  
+end
