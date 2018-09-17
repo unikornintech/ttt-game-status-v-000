@@ -35,5 +35,5 @@ def draw?(board)
 end
 
 def over?
-  
+  board.none? { | position | position == " " }
 end
