@@ -31,5 +31,5 @@ def full?(board)
 end
 
 def draw?(board)
-  board.none? { |position | position == " " }
+  board.none? { |position | position == " " } && !won?(board)
 end
