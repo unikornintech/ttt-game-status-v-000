@@ -35,5 +35,9 @@ def draw?(board)
 end
 
 def over?(board)
-  board.none? { | position | position == " " }
+  if draw?(board) || won?(board)
+    return true
+  else
+    return false
+  end
 end
